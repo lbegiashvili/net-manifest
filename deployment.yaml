@@ -18,7 +18,7 @@ spec:
         app: flaskdemo
     spec:
       containers:
-      - image: lbegiashvili/test:12
+      - image: lbegiashvili/test:latest
         name: flaskdemo
         resources: {}
 status: {}
@@ -34,6 +34,6 @@ spec:
   ports:
   - port: 5000
     targetPort: 5000
-    nodePort: 30300
+    nodePort: 30400
   selector:
     app: flaskdemo
